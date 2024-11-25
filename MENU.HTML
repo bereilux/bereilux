@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario del Alumno</title>
+    <style>
+        /* Estilo general del cuerpo */
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Roboto', sans-serif;
+            background-color: #fbeefb; /* Fondo suave rosado claro */
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            color: #333;
+        }
+
+        /* Estilos para el encabezado */
+        header {
+            width: 100%;
+            background-color: #d81b60; /* Rosado fuerte */
+            padding: 40px 0;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        h1 {
+            color: white;
+            margin: 0;
+            font-size: 36px;
+            font-weight: 600;
+        }
+
+        /* Menú de navegación */
+        nav {
+            margin-top: 40px;
+            width: 100%;
+            max-width: 960px;
+        }
+
+        ul {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            gap: 40px;
+            flex-wrap: wrap;
+        }
+
+        li {
+            display: inline;
+        }
+
+        a {
+            text-decoration: none;
+            color: white;
+            font-size: 18px;
+            font-weight: 500;
+            padding: 12px 20px;
+            background-color: #f06292; /* Rosado intermedio */
+            border-radius: 6px;
+            border: 1px solid transparent;
+            transition: all 0.3s ease;
+            margin: 5px;
+            box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        a:hover {
+            background-color: #f50057; /* Rosado brillante */
+            color: white;
+            border-color: #f50057;
+        }
+
+        /* Sección para los botones al centro */
+        .button-container {
+            margin-top: 50px;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            width: 100%;
+        }
+
+        .button-container a {
+            text-decoration: none;
+            color: white;
+            font-size: 18px;
+            font-weight: 500;
+            padding: 14px 25px;
+            background-color: #ec407a; /* Rosado más suave */
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: background-color 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .button-container a:hover {
+            background-color: #e91e63; /* Rosado más oscuro */
+            box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
+        }
+
+        /* Estilo responsivo para pantallas pequeñas */
+        @media (max-width: 600px) {
+            h1 {
+                font-size: 28px;
+            }
+
+            ul {
+                flex-direction: column;
+                gap: 20px;
+            }
+
+            a {
+                font-size: 16px;
+                padding: 10px 15px;
+            }
+
+            .button-container {
+                flex-direction: column;
+                gap: 15px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Formulario del Alumno</h1>
+    </header>
+
+    <!-- Botones en una sección separada -->
+    <div class="button-container">
+        <a href="formulario_alumnos.php">Capturar Alumnos</a>
+        <a href="formulario_maestro.php">Capturar Maestros</a>
+        <a href="formulariodematerias.php">Capturar Materias</a>
+        <a href="FORMULARIO CALIFICACIONES.PHP">Capturar Calificaciones</a>
+    </div>
+
+</body>
+</html>
